@@ -1,0 +1,29 @@
+Part- 1
+
+1. How do we insert a comment in HTML? (2 marks)
+
+2. What are HTML tags? (2 marks)
+
+3. What are HTML Attributes? (2 marks)
+
+4. What is a marquee in HTML? (2 marks)
+
+5. How do you create links to different sections within the same HTML web page? (2 marks)
+
+-----------------------------------------------------------------------------------------------
+Part-2
+
+1. What is semantic HTML? (5 marks)
+
+2. How do you create links to different sections within the same HTML web page? (5 marks)
+
+
+------------------------------------
+
+Part 3 practical
+
+Details
+
+Frameset
+
+Login

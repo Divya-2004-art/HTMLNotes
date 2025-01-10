@@ -1,0 +1,163 @@
+for 4–5 years of experience:  
+
+
+### *HTML5*
+1. *Semantic Tags in HTML5*  
+   Semantic tags provide meaning to the content, making it easier for browsers, search engines, and developers to understand. Examples:  
+   - <header>: Defines a page or section header.  
+   - <footer>: Defines a page or section footer.  
+   - <article>: Represents a self-contained piece of content.  
+   - <section>: Groups related content.  
+   - <aside>: Content related to the main content but placed aside.  
+
+   *Significance*: Improves accessibility, SEO, and maintainability.  
+
+2. *Local Storage vs. Session Storage*  
+   - *Local Storage*: Persistent storage; data persists even after the browser is closed.  
+   - *Session Storage*: Temporary storage; data is cleared when the session ends (e.g., tab is closed).  
+   Example:  
+   javascript
+   localStorage.setItem("key", "value");
+   sessionStorage.setItem("key", "value");
+   
+
+3. *Canvas Element*  
+   The <canvas> element is used for drawing graphics via JavaScript.  
+   Example:  
+   html
+   <canvas id="myCanvas" width="200" height="100"></canvas>
+   <script>
+       const canvas = document.getElementById("myCanvas");
+       const ctx = canvas.getContext("2d");
+       ctx.fillStyle = "blue";
+       ctx.fillRect(10, 10, 150, 75);
+   </script>
+   
+
+---
+
+### *C++*
+1. *RAII (Resource Acquisition Is Initialization)*  
+   RAII ensures resource management by tying resource lifetimes to object lifetimes.  
+   Example:  
+   cpp
+   class FileHandler {
+       std::ofstream file;
+   public:
+       FileHandler(const std::string& fileName) {
+           file.open(fileName);
+       }
+       ~FileHandler() {
+           if (file.is_open()) file.close();
+       }
+   };
+   
+
+2. *Smart Pointers*  
+   - std::unique_ptr: Sole ownership; non-copyable.  
+   - std::shared_ptr: Shared ownership. Reference count is maintained.  
+   Example:  
+   cpp
+   std::shared_ptr<int> sp = std::make_shared<int>(10);
+   
+
+3. *Polymorphism*  
+   Runtime polymorphism via virtual functions:  
+   cpp
+   class Base {
+   public:
+       virtual void display() { std::cout << "Base"; }
+   };
+   class Derived : public Base {
+   public:
+       void display() override { std::cout << "Derived"; }
+   };
+   
+
+---
+
+### *Java*
+1. *HashMap vs. Hashtable*  
+   - HashMap is not synchronized; better for single-threaded applications.  
+   - Hashtable is synchronized; thread-safe but slower.  
+
+2. *Functional Interfaces in Java 8*  
+   Example:  
+   java
+   @FunctionalInterface
+   interface MyInterface {
+       void show();
+   }
+   public class Test {
+       public static void main(String[] args) {
+           MyInterface obj = () -> System.out.println("Lambda Expression");
+           obj.show();
+       }
+   }
+   
+
+3. *Volatile Keyword*  
+   Ensures visibility of changes to variables across threads.  
+   Example:  
+   java
+   volatile boolean flag = true;
+   
+
+---
+
+### *PHP*  
+1. *Require vs. Include*  
+   - require: Stops execution on failure.  
+   - include: Emits a warning but continues execution.  
+
+2. *Prevent SQL Injection*  
+   Use prepared statements:  
+   php
+   $stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+   $stmt->bind_param("s", $username);
+   
+
+---
+
+### *.NET*
+1. *.NET Framework vs. .NET Core vs. .NET 6+*  
+   - *Framework*: Windows-based, older.  
+   - *Core*: Cross-platform, open-source.  
+   - *.NET 6+*: Unified platform for all applications.
+
+2. *Garbage Collector*  
+   - Generation 0: Short-lived objects.  
+   - Generation 1: Medium lifespan.  
+   - Generation 2: Long-lived objects.  
+
+---
+
+### *Python*
+1. *Memory Management*  
+   Uses reference counting and garbage collection.  
+
+2. *Decorator Example*  
+   python
+   def decorator(func):
+       def wrapper():
+           print("Before function call")
+           func()
+           print("After function call")
+       return wrapper
+   @decorator
+   def say_hello():
+       print("Hello!")
+   say_hello()
+   
+
+---
+
+### *SQL*
+1. *Clustered vs. Non-Clustered Index*  
+   - Clustered: Alters table structure; faster for range queries.  
+   - Non-clustered: Separate structure; flexible for multiple indexes.
+
+2. *Window Function Example*  
+   sql
+   SELECT employee_id, RANK() OVER (ORDER BY salary DESC) AS rank
+   FROM employees;

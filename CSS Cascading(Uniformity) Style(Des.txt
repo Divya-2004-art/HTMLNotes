@@ -1,0 +1,70 @@
+CSS: Cascading(Uniformity) Style(Design) Sheet(Web Page)
+
+Types of CSS:
+
+1]Inline CSS:tag itself(style="")
+2]Internal CSS:At a time only 1 page(<style>)
+3]External CSS:more than 1 page(<link>)
+
+Properties:
+
+color:
+font-size:
+font-family:
+text-decoration:
+font-weight:
+height:
+width:
+text-align:
+background-image:url("")
+background:(bgcolor)
+
+border:
+border-radius:
+top:
+left:
+right:
+bottom:
+padding:
+opacity:
+----------------
+Form:
+
+-
+
+<form action="">
+
+<input type="text/number/date/email/file/radio/checkbox/submit/reset/password" placeholder="">
+
+---------------------------------------------
+
+CSS:
+
+Cascading Style Sheet
+
+-uniformity
+
+Types of CSS:
+
+1]Inline CSS:
+
+-tag itself
+-it used 'style' attribute inside the any tag.
+
+2]Internal CSS
+
+-It design single page at a time.
+-it used <style> tag in <head> section.
+
+3]External CSS
+
+-It design multiple pages at a time.
+-it used <link> tag inside the <head> section.
+
+Property:
+
+color:font color
+
+background:background color
+
+font-family:styles effect
